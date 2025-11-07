@@ -1,0 +1,50 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.carousel-inner {
+	display: flex;
+	transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+	min-width: 100%;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 12px;
+	object-fit: contain; /* Ensure the entire image is visible */
+	max-height: 400px; /* Prevent images from becoming too large */
+}
+
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 2rem;
+	padding: 0.3rem 0.8rem;
+	border-radius: 50%;
+}
+
+.carousel-btn.prev {
+	left: 10px;
+}
+
+.carousel-btn.next {
+	right: 10px;
+}
+
+.carousel-btn:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
