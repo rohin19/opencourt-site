@@ -1,0 +1,64 @@
+/* Styles for the Videos page */
+
+.videos-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+
+.video-cards {
+	display: flex;
+	gap: 4rem;
+	flex-wrap: wrap; /* Allow cards to wrap to the next row */
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.video-card {
+	flex: 0 0 22%;
+	outline: 2px solid #303030;
+	outline-offset: 3px;
+	border-radius: 8px;
+	padding-top: 2rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-bottom: 2rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	background-color: #1b1b1b;
+	text-align: center;
+}
+
+.video-frame {
+	width: 400px;
+	height: 300px; /* Increased height to make the video take up more space */
+	border: none;
+	border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+	.video-card {
+		flex: 0 0 100%; /* Make video cards take up the full width on smaller screens */
+        padding: 1rem;
+    }
+
+	.video-frame {
+		width: 100%; /* Adjust video width to fit smaller screens */
+		height: auto; /* Maintain aspect ratio */
+	}
+
+    .video-card h2 {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+	header h1 {
+		font-size: 1.8rem; /* Consistent font size for smaller screens */
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+	}
+}

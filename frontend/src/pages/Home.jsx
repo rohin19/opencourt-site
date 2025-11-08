@@ -21,7 +21,7 @@ export default function Home() {
 					<button className="apk-button"
 						onClick={() => {
 							// const link = document.createElement("a");
-							// link.href = "../assets/showandtell1.apk";
+							// link.href = "/src/assets/showandtell1.apk";
 							// link.download = "OpenCourt.apk";
 							// document.body.appendChild(link);
 							// link.click();
