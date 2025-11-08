@@ -17,7 +17,7 @@ h1 {
 }
 
 .card {
-  flex: 0 0 200px; /* Ensure all cards are the same size */
+  flex: 1 0 200px; /* Ensure all cards are the same size */
   outline: 2px solid #303030;
   outline-offset: 3px;
   border-radius: 8px;
