@@ -1,13 +1,15 @@
-h1{
-    margin-bottom: 8rem;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8rem;
 }
 
 .team-cards {
   display: flex;
-  justify-content: center; /* Center the cards equally */
+  justify-content: center; /* Adjusted to distribute cards evenly */
   align-items: flex-start;
   gap: 2rem; /* Maintain spacing between cards */
   padding: 1rem;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
 }
 
 .card h2 {
@@ -15,7 +17,7 @@ h1{
 }
 
 .card {
-  flex: 0 0 22%; /* Ensure all cards are the same size */
+  flex: 0 0 200px; /* Ensure all cards are the same size */
   outline: 2px solid #303030;
   outline-offset: 3px;
   border-radius: 8px;
@@ -49,4 +51,28 @@ h1{
   position: absolute;
   left: 0;
   color: var(--color-button-bg); 
+}
+
+@media (max-width: 768px) {
+  .team-page h1 {
+    font-size: 1.8rem; /* Consistent font size for smaller screens */
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+  }
+
+  .card h2 {
+    margin-left: 1.2rem;
+  }
+
+  .card {
+    flex: 0 0 100%; /* Make cards take up the full width on smaller screens */
+  }
+
+  .card ul {
+    text-align: center; /* Center the list text for smaller screens */
+  }
+
+  .card ul li {
+    justify-content: center; /* Center the bullet point and text horizontally */
+  }
 }

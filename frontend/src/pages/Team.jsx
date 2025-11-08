@@ -3,7 +3,7 @@ import "../styles/Team.css";
 
 export default function Team() {
 	return (
-		<div>
+		<div className="team-page">
 			<header>
 				<h1>Team Breakdown</h1>
 			</header>
