@@ -52,7 +52,7 @@ export default function Navbar() {
 					className="apk-button"
 					onClick={() => {
 						const link = document.createElement("a");
-						link.href = "/src/assets/showandtell1.apk";
+						link.href = "/showandtell1.apk"; // Updated to public folder path
 						link.download = "showandtell1-opencourt.apk";
 						document.body.appendChild(link);
 						link.click();
