@@ -13,8 +13,8 @@ export default function Diagrams() {
 					className="mvvm-button"
 					onClick={() => {
 						const link = document.createElement("a");
-						link.href = "/mvvmDiagram.pdf"; // Updated to public folder path
-						link.download = "MVVM-Diagram.pdf";
+						link.href = "/mvvmDiagram.pdf"; 
+						link.download = "mvvmDiagram.pdf";
 						document.body.appendChild(link);
 						link.click();
 						document.body.removeChild(link);
@@ -25,8 +25,8 @@ export default function Diagrams() {
 					className="mockup-button"
 					onClick={() => {
 						const link = document.createElement("a");
-						link.href = "/UI_Mockup1.pdf"; // Updated to public folder path
-						link.download = "UI_Mockup.pdf";
+						link.href = "/UI_Mockup1.pdf"; 
+						link.download = "UI-Mockup.pdf";
 						document.body.appendChild(link);
 						link.click();
 						document.body.removeChild(link);
