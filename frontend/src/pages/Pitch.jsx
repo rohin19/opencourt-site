@@ -3,7 +3,7 @@ import "../styles/Pitch.css";
 
 export default function Pitch() {
 	return (
-		<div>
+		<div className="pitch">
 			<header>
 				<h1>Original Pitch</h1>
 				<p>With public sports, you never know if a court's free. You end up driving around hoping for a spot to be open when you get there.
