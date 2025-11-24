@@ -26,6 +26,15 @@ export default function Videos() {
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen></iframe>
 				</div>
+				<div className="video-card">
+					<h2>Show and Tell 2</h2>
+					<iframe
+						className="video-frame"
+						src="https://www.youtube.com/embed/ns2QPnvPeFo"
+						title="How OpenCourt Works"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen></iframe>
+				</div>
 			</div>
 		</div>
 	);

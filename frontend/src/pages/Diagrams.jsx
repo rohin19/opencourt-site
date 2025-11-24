@@ -33,6 +33,30 @@ export default function Diagrams() {
 					}}>
 					UI Mockup
 				</button>
+				<button
+					className="workflow-button"
+					onClick={() => {
+						const link = document.createElement("a");
+						link.href = "/362AppWorkflow.pdf"; 
+						link.download = "App-Workflow.pdf";
+						document.body.appendChild(link);
+						link.click();
+						document.body.removeChild(link);
+					}}>
+					App Workflow
+				</button>
+				<button
+					className="thread-button"
+					onClick={() => {
+						const link = document.createElement("a");
+						link.href = "/362ThreadDiagram.pdf"; 
+						link.download = "Thread-Diagram.pdf";
+						document.body.appendChild(link);
+						link.click();
+						document.body.removeChild(link);
+					}}>
+					Thread Diagram
+				</button>
 			</div>
 		</div>
 	);
