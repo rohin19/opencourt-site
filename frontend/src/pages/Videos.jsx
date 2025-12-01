@@ -22,7 +22,7 @@ export default function Videos() {
 					<iframe
 						className="video-frame"
 						src="https://www.youtube.com/embed/a2nLtq4466w"
-						title="How OpenCourt Works"
+						title="Show and tell 1"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen></iframe>
 				</div>
@@ -31,7 +31,16 @@ export default function Videos() {
 					<iframe
 						className="video-frame"
 						src="https://www.youtube.com/embed/ns2QPnvPeFo"
-						title="How OpenCourt Works"
+						title="Show and tell 2"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen></iframe>
+				</div>
+				<div className="video-card">
+					<h2>Final Presentation</h2>
+					<iframe
+						className="video-frame"
+						src="https://www.youtube.com/embed/ns2QPnvPeFo"
+						title="Final demo presentation"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen></iframe>
 				</div>

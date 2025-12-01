@@ -40,14 +40,14 @@ export default function Home() {
 					<button
 						className="apk-button"
 						onClick={() => {
-							// const link = document.createElement("a");
-							// link.href = "/src/assets/showandtell1.apk";
-							// link.download = "OpenCourt.apk";
-							// document.body.appendChild(link);
-							// link.click();
-							// document.body.removeChild(link);
+							const link = document.createElement("a");
+							link.href = "/Group22_OpenCourt.zip";
+							link.download = "Group22_OpenCourt.zip";
+							document.body.appendChild(link);
+							link.click();
+							document.body.removeChild(link);
 						}}>
-						ZIP (tbd)
+						ZIP
 					</button>
 				</div>
 			</div>
