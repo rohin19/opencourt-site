@@ -1,22 +1,22 @@
 import { useState } from "react";
 import "../styles/App.css";
 import "../styles/Home.css";
-import openscreen from "../assets/oc_open_screen.png";
-import loginscreen from "../assets/oc_login_screen.png";
-import homescreen from "../assets/oc_home_screen.png";
-import courtdetail from "../assets/oc_court_detail.png";
-import editcourt from "../assets/oc_edit_court.png";
-import checkin from "../assets/oc_checkin.png";
-import mapscreen from "../assets/oc_map_screen.png";
-import addcourt from "../assets/oc_add_court.png";
+import splashscreen from "../assets/splash_screen.png";
+import loginscreen from "../assets/login_screen.png";
+import homescreen from "../assets/home_screen.png";
+import favouritesscreen from "../assets/favourites_screen.png";
+import courtdetail from "../assets/court_detail.png";
+import editcourt from "../assets/edit_court.png";
+import mapscreen from "../assets/map_screen.png";
+import addcourt from "../assets/add_court.png";
 
 import Carousel from "../components/Carousel";
 
 export default function Home() {
 	const [message, setMessage] = useState("");
 
-	const images = [openscreen, loginscreen, homescreen, courtdetail,
-		 editcourt, checkin, mapscreen, addcourt];
+	const images = [splashscreen, loginscreen, homescreen, favouritesscreen, courtdetail,
+		 editcourt, mapscreen, addcourt];
 
 	return (
 		<div className="home-container">
