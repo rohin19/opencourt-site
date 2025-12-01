@@ -39,12 +39,14 @@
   border-radius: 6px;
   font-weight: 600;
   font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .nav-left .navlink.active {
   color: var(--color-button-bg);
   transition: 0.5s;
 }
+
 
 .nav-right {
   display: flex;
@@ -70,6 +72,7 @@
   border-radius: 6px;
   font-weight: 600;
   font-size: 1rem;
+  transition: 0.3s ease;
 }
 
 .nav-right .navlink:hover {

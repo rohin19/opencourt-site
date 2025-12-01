@@ -4,6 +4,7 @@
 	max-width: 500px;
 	overflow: hidden;
 	border-radius: 12px;
+	touch-action: pan-y;
 }
 
 .carousel-inner {
@@ -21,30 +22,71 @@
 	display: block;
 	border-radius: 12px;
 	object-fit: contain; /* Ensure the entire image is visible */
-	max-height: 400px; /* Prevent images from becoming too large */
+	max-height: 600px; /* Prevent images from becoming too large */
 }
 
 .carousel-btn {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgb(0, 0, 0);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 	color: white;
 	border: none;
 	cursor: pointer;
-	font-size: 2rem;
-	padding: 0.3rem 0.8rem;
-	border-radius: 50%;
+	font-size: 1.5rem;
+	padding: 0.8rem;
+	border-radius: 20%;
+	display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center content */
+    justify-content: center;
+	transition: color 0.3s ease;
 }
 
 .carousel-btn.prev {
-	left: 10px;
+	left: 20px;
 }
 
 .carousel-btn.next {
-	right: 10px;
+	right: 20px;
 }
 
 .carousel-btn:hover {
-	background-color: rgba(0, 0, 0, 0.7);
+	transition: 0.3s;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	color: var(--color-button-bg);
+}
+
+.carousel-btn:focus {
+    outline: none; /* Ensures no outline appears when the button is focused */
+}
+
+@media (max-width: 1050px) {
+    .carousel-btn {
+        display: none; /* Hide buttons on smaller screens */
+    }
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--color-button-bg);
+}
+
+.indicator:hover {
+    background-color: var(--color-button-bg);
 }
