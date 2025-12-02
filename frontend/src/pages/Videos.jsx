@@ -36,10 +36,10 @@ export default function Videos() {
 						allowFullScreen></iframe>
 				</div>
 				<div className="video-card">
-					<h2>Final Presentation</h2>
+					<h2>Final Presentation + Demo</h2>
 					<iframe
 						className="video-frame"
-						src="https://www.youtube.com/embed/ns2QPnvPeFo"
+						src="https://www.youtube.com/embed/zAXvRrGxMB4"
 						title="Final demo presentation"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen></iframe>

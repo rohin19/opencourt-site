@@ -22,6 +22,8 @@ body.home-page {
   align-items: center;
   padding: 2rem;
   gap: 2rem;
+  padding-bottom: 7rem;
+  border-bottom: 2px solid #747070;
 }
 
 .home-left {
@@ -81,6 +83,54 @@ body.home-page {
   border-radius: 8px;
 }
 
+.home-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.home-second h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.home-second .video-card {
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+  width: 100%;
+  max-width: 600px; /* Optional: Limit the width of the video card */
+  flex: 0 0 50%;
+  height: auto;
+  outline: 2px solid #303030;
+  outline-offset: 3px;
+  border-radius: 8px;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #1b1b1b;
+  text-align: center;
+}
+
+.home-second .video-frame {
+	width: 400px;
+	height: 300px; /* Increased height to make the video take up more space */
+	border: none;
+	border-radius: 8px;
+}
+
+.home-wrapper {
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
@@ -113,5 +163,21 @@ body.home-page {
 
   .home-image {
     width: 75%;
+  }
+
+  .home-second {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .home-second .video-card {
+    width: 80%; /* Reduce the width for smaller screens */
+    height: auto; /* Allow the height to adjust dynamically */
+    padding: 1rem; /* Maintain some padding */
+  }
+
+  .home-second .video-frame {
+    width: 100%; /* Ensure the video frame fits within the card */
+    height: 200px; /* Increase the height to make it taller */
   }
 }

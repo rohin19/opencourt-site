@@ -33,12 +33,8 @@ export default function Carousel({ images }) {
 				))}
 			</div>
 
-			<button className="carousel-btn prev" onClick={goToPrevious}>
-				←
-			</button>
-			<button className="carousel-btn next" onClick={goToNext}>
-				→
-			</button>
+			<button className="carousel-btn prev" onClick={goToPrevious}>←</button>
+			<button className="carousel-btn next" onClick={goToNext}>→</button>
 
 			<div className="carousel-indicators">
 				{images.map((_, i) => (
