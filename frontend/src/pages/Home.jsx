@@ -69,7 +69,7 @@ export default function Home() {
 				<div className="video-card">
 					<iframe
 						className="video-frame"
-						src="https://www.youtube.com/embed/zAXvRrGxMB4"
+						src="https://www.youtube.com/embed/rR_dyZYg72g"
 						title="Final demo presentation"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen></iframe>
