@@ -10,7 +10,7 @@ export default function Team() {
 
 			<section className="team-cards">
 				<div className="card">
-					<h2>Rohin</h2>
+					<h2>Rohin Aulakh</h2>
 					<ul>
 						<li>Google Maps Interface</li>
 						<li>Location Permissions</li>
@@ -18,7 +18,7 @@ export default function Team() {
 					</ul>
 				</div>
 				<div className="card">
-					<h2>Hugo</h2>
+					<h2>Hugo Najafi</h2>
 					<ul>
 						<li>UI Setup</li>
 						<li>Firebase Database</li>
@@ -26,7 +26,7 @@ export default function Team() {
 					</ul>
 				</div>
 				<div className="card">
-					<h2>Tanvir</h2>
+					<h2>Tanvir Shergill</h2>
 					<ul>
 						<li>Repository Setup</li>
 						<li>Video Updates</li>
@@ -34,7 +34,7 @@ export default function Team() {
 					</ul>
 				</div>
 				<div className="card">
-					<h2>Harry</h2>
+					<h2>Harry Gupta</h2>
 					<ul>
 						<li>MVVM Diagram</li>
 						<li>Figma UI Mockups</li>
